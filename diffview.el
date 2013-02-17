@@ -29,7 +29,7 @@
 ;;
 ;; Put this file on your load-path and do:
 ;;
-;;`   (require 'diffview)
+;;     (require 'diffview)
 ;;
 ;;; Use:
 ;;
@@ -37,6 +37,14 @@
 ;;
 ;; o `diffview-current` : Opens the current buffer with `diffview`
 ;; o `diffview-region` : Opens the current region with `diffview`
+;;
+;;
+;;; Screenshots:
+;;
+;; Before:<br>
+;; <img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-before.png"><br>
+;; After:<br>
+;; <img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-after.png"><br>
 ;;
 ;;; Code
 
