@@ -21,9 +21,9 @@
 
 ;;; Commentary:
 ;;
-;; View a diff in a side-by-side format. This comes in handy for ready
-;; patches from mailing lists (or from whencever you might acquire
-;; them).
+;; Take a plain ol' diff and view it in an easier-to-comprehend
+;; side-by-side format. This comes in handy for ready patches from
+;; mailing lists (or from whencever you might acquire them).
 ;;
 ;;; Installation:
 ;;
