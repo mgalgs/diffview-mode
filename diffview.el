@@ -33,12 +33,13 @@
 ;;
 ;;     (require 'diffview)
 ;;
-;;; Use:
+;;; Usage:
 ;;
 ;; The following functions are provided:
 ;;
 ;; o `diffview-current` : Opens the current buffer with `diffview`
 ;; o `diffview-region` : Opens the current region with `diffview`
+;; o `diffview-message` : Opens the current email message with `diffview`
 ;;
 ;;
 ;;; Screenshots:
@@ -147,18 +148,21 @@ side-by-side view"
 
     (scroll-all-mode)))
 
+;;;###autoload
 (defun diffview-current ()
   "Parses the content of the current buffer as a diff and opens
   the result in a side-by-side view"
   (interactive)
   (diffview/view-string (buffer-string)))
 
+;;;###autoload
 (defun diffview-region ()
   "Parses the content of the current buffer as a diff and opens
   the result in a side-by-side view"
   (interactive)
   (diffview/view-string (buffer-substring (point) (mark))))
 
+;;;###autoload
 (defun diffview-message ()
   "Parses the content of the current buffer (assumed to be a
   message (i.e. in `Article' mode)) as a diff and opens the
@@ -177,7 +181,6 @@ side-by-side view"
 
 ;;; diffview-mode ;;;
 
-;;;###autoload
 (define-derived-mode diffview-mode special-mode "Diffview"
   "Mode for viewing diffs side-by-side"
   (setq font-lock-defaults '(diff-font-lock-keywords t nil nil nil (font-lock-multiline . nil))))
