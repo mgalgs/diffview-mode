@@ -20,6 +20,7 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
+;; [![License GPL3](https://img.shields.io/badge/license-GPL_3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 ;;
 ;; Take a plain ol' diff and view it in an easier-to-comprehend
 ;; side-by-side format. This comes in handy for ready patches from
