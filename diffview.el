@@ -1,10 +1,11 @@
 ;;; diffview.el --- View diffs in side-by-side format
 
-;; Copyright (C) 2013, Mitchel Humpherys
+;; Copyright (C) 2013-2015, Mitchel Humpherys
 
 ;; Author: Mitchel Humpherys <mitch.special@gmail.com>
-;; Keywords: convenience
+;; Keywords: convenience, diff
 ;; Version: 0.1
+;; URL: https://github.com/mgalgs/diffview-mode
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
