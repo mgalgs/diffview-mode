@@ -23,9 +23,9 @@
 ;;; Commentary:
 ;; [![License GPL3](https://img.shields.io/badge/license-GPL_3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 ;;
-;; Take a plain ol' diff and view it in an easier-to-comprehend
-;; side-by-side format. This comes in handy for ready patches from
-;; mailing lists (or from whencever you might acquire them).
+;; Render a unified diff (top/bottom) in an easy-to-comprehend side-by-side
+;; format. This comes in handy for reading patches from mailing lists (or
+;; from whencever you might acquire them).
 ;;
 ;;; Installation:
 ;;
@@ -33,13 +33,16 @@
 ;;
 ;;     (require 'diffview)
 ;;
+;; (MELPA installation coming soon...)
+;;
 ;;; Usage:
 ;;
-;; The following functions are provided:
+;; The following functions are provided for launching a side-by-side diff:
 ;;
-;; o `diffview-current` : Opens the current buffer with `diffview`
-;; o `diffview-region` : Opens the current region with `diffview`
-;; o `diffview-message` : Opens the current email message with `diffview`
+;; o `diffview-current` : View the current diff buffer side-by-side
+;; o `diffview-region` : View the current diff region side-by-side
+;; o `diffview-message` : View the current email message (which presumably
+;;    contains a patch) side-by-side
 ;;
 ;;
 ;;; Screenshots:
