@@ -48,8 +48,9 @@
 ;; After:<br>
 ;; <img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-after.png"><br>
 ;;
-;;; Code
+;;; Code:
 
+(require 'message)
 
 (defun diffview/print-all-lines-to-buffer (lines buffer-name)
   "Prints each line in `LINES' to a buffer named `BUFFER-NAME'
@@ -176,6 +177,7 @@ side-by-side view"
 
 ;;; diffview-mode ;;;
 
+;;;###autoload
 (define-derived-mode diffview-mode special-mode "Diffview"
   "Mode for viewing diffs side-by-side"
   (setq font-lock-defaults '(diff-font-lock-keywords t nil nil nil (font-lock-multiline . nil))))
