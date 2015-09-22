@@ -5,7 +5,7 @@
 [![License GPL3](https://img.shields.io/badge/license-GPL_3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 Render a unified diff (top/bottom) in an easy-to-comprehend side-by-side
-format. This comes in handy for reading patches from mailing lists (or
+format.  This comes in handy for reading patches from mailing lists (or
 from whencever you might acquire them).
 
 ### Installation
@@ -41,19 +41,17 @@ After:<br>
 
 #### `(diffview-current)`
 
-Parses the content of the current buffer as a diff and opens
-  the result in a side-by-side view
+Show current diff buffer in a side-by-side view.
 
 #### `(diffview-region)`
 
-Parses the content of the current buffer as a diff and opens
-  the result in a side-by-side view
+Show current diff region in a side-by-side view.
 
 #### `(diffview-message)`
 
-Parses the content of the current buffer (assumed to be a
-  message (i.e. in `Article` mode)) as a diff and opens the
-  result in a side-by-side view
+Show `message-mode` buffer in a side-by-side view.
+
+This is useful for reading patches from mailing lists.
 
 -----
 <div style="padding-top:15px;color: #d0d0d0;">

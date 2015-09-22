@@ -24,7 +24,7 @@
 ;; [![License GPL3](https://img.shields.io/badge/license-GPL_3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 ;;
 ;; Render a unified diff (top/bottom) in an easy-to-comprehend side-by-side
-;; format. This comes in handy for reading patches from mailing lists (or
+;; format.  This comes in handy for reading patches from mailing lists (or
 ;; from whencever you might acquire them).
 ;;
 ;;; Installation:
@@ -57,8 +57,7 @@
 (require 'message)
 
 (defun diffview--print-all-lines-to-buffer (lines buffer-name)
-  "Prints each line in `LINES' to a buffer named `BUFFER-NAME'
-  with an intervening \n between each line"
+  "Prints each line in `LINES' to a buffer named `BUFFER-NAME'."
   (let ((old-temp-buffer (get-buffer buffer-name)))
     ;; (with-output-to-temp-buffer buffer-name
     (when old-temp-buffer
@@ -72,13 +71,12 @@
 (defvar diffview--plus-bufname "*side-by-side-2*")
 (defvar diffview--saved-wincfg nil)
 (defvar diffview--regexp-is-plus-line "^\\+\\([^+]\\{1\\}\\|$\\)"
-  "a + followed by one non + or the end of the line")
+  "A + followed by one non + or the end of the line.")
 (defvar diffview--regexp-is-minus-line "^-\\([^-]\\{1\\}\\|$\\)"
-  "a - followed by one non - or the end of the line")
+  "A - followed by one non - or the end of the line.")
 
 (defun diffview--view-string (input-string)
-  "Parses `INPUT-STRING' as a diff and opens the result in a
-side-by-side view"
+  "Displays `INPUT-STRING' (a diff) in a side-by-side view."
   (setq diffview--saved-wincfg (current-window-configuration))
   (delete-other-windows)
   (let (plus-lines
@@ -153,23 +151,21 @@ side-by-side view"
 
 ;;;###autoload
 (defun diffview-current ()
-  "Parses the content of the current buffer as a diff and opens
-  the result in a side-by-side view"
+  "Show current diff buffer in a side-by-side view."
   (interactive)
   (diffview--view-string (buffer-string)))
 
 ;;;###autoload
 (defun diffview-region ()
-  "Parses the content of the current buffer as a diff and opens
-  the result in a side-by-side view"
+  "Show current diff region in a side-by-side view."
   (interactive)
   (diffview--view-string (buffer-substring (point) (mark))))
 
 ;;;###autoload
 (defun diffview-message ()
-  "Parses the content of the current buffer (assumed to be a
-  message (i.e. in `Article' mode)) as a diff and opens the
-  result in a side-by-side view"
+  "Show `message-mode' buffer in a side-by-side view.
+
+This is useful for reading patches from mailing lists."
   (interactive)
   (let (beg end)
     (save-excursion
@@ -190,7 +186,7 @@ side-by-side view"
   (setq font-lock-defaults '(diff-font-lock-keywords t nil nil nil (font-lock-multiline . nil))))
 
 (defun diffview--quit ()
-  "Quit diffview and clean up diffview buffers"
+  "Quit diffview and clean up diffview buffers."
   (interactive)
   (delete-other-windows)
   (scroll-all-mode 0)
