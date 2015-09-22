@@ -39,9 +39,9 @@
 ;;
 ;; The following functions are provided for launching a side-by-side diff:
 ;;
-;; o `diffview-current` : View the current diff buffer side-by-side
-;; o `diffview-region` : View the current diff region side-by-side
-;; o `diffview-message` : View the current email message (which presumably
+;; o `diffview-current' : View the current diff buffer side-by-side
+;; o `diffview-region' : View the current diff region side-by-side
+;; o `diffview-message' : View the current email message (which presumably
 ;;    contains a patch) side-by-side
 ;;
 ;;
