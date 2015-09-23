@@ -11,11 +11,7 @@ from whencever you might acquire them).
 ### Installation
 
 
-Put this file on your load-path and do:
-
-    (require 'diffview)
-
-(MELPA installation coming soon...)
+    M-x package-install diffview
 
 ### Usage
 
