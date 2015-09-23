@@ -2,7 +2,7 @@
 *View diffs in side-by-side format*
 
 ---
-[![License GPL3](https://img.shields.io/badge/license-GPL_3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
+[![License GPLv3](https://img.shields.io/badge/license-GPL_v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 Render a unified diff (top/bottom) in an easy-to-comprehend side-by-side
 format.  This comes in handy for reading patches from mailing lists (or
