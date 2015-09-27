@@ -4,7 +4,7 @@
 
 ;; Author: Mitchel Humpherys <mitch.special@gmail.com>
 ;; Keywords: convenience, diff
-;; Version: 0.1
+;; Version: 1.0
 ;; URL: https://github.com/mgalgs/diffview-mode
 
 ;; This program is free software; you can redistribute it and/or modify
