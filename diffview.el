@@ -42,10 +42,11 @@
 ;;
 ;;; Screenshots:
 ;;
-;; Before:<br>
-;; <img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-before.png"><br>
-;; After:<br>
-;; <img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-after.png"><br>
+;; Before:
+;; https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-before.png
+;;
+;; After:
+;; https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-after.png
 ;;
 ;;; Code:
 

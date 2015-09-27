@@ -28,10 +28,11 @@ The following functions are provided for launching a side-by-side diff:
 ### Screenshots
 
 
-Before:<br>
-<img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-before.png"><br>
-After:<br>
-<img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-after.png"><br>
+Before:
+<img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-before.png">
+
+After:
+<img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-after.png">
 
 ### Function Documentation
 
