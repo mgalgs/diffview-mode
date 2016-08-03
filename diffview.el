@@ -1,6 +1,6 @@
 ;;; diffview.el --- View diffs in side-by-side format
 
-;; Copyright (C) 2013-2015, Mitchel Humpherys
+;; Copyright (C) 2013-2016 Free Software Foundation, Inc.
 
 ;; Author: Mitchel Humpherys <mitch.special@gmail.com>
 ;; Maintainer: Mitchel Humpherys <mitch.special@gmail.com>
