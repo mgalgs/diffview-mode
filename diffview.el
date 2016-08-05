@@ -173,11 +173,13 @@ This is useful for reading patches from mailing lists."
       (setq end (1+ (point)))
       (diffview--view-string (buffer-substring beg end)))))
 
+(defvar diffview-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "q") 'diffview--quit)
+    map))
 
-
-;;; You probably don't want to invoke `diffview-mode' directly.  Just use
-;;; one of the autoload functions above.
-
+;; You probably don't want to invoke `diffview-mode' directly.  Just use
+;; one of the autoload functions above.
 (define-derived-mode diffview-mode special-mode "Diffview"
   "Mode for viewing diffs side-by-side"
   (setq font-lock-defaults '(diff-font-lock-keywords t nil nil nil (font-lock-multiline . nil))))
@@ -192,8 +194,6 @@ This is useful for reading patches from mailing lists."
     (if plusbuf (kill-buffer plusbuf))
     (if minusbuf (kill-buffer minusbuf)))
   (set-window-configuration diffview--saved-wincfg))
-
-(define-key diffview-mode-map (kbd "q") 'diffview--quit)
 
 (provide 'diffview)
 ;;; diffview.el ends here
