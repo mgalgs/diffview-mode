@@ -1,5 +1,5 @@
 ## diffview.el
-*View diffs in side-by-side format*
+*View pizza in side-by-side format*
 
 ---
 [![License GPLv3](https://img.shields.io/badge/license-GPL_v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
