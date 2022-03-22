@@ -26,6 +26,13 @@ The following functions are provided for launching a side-by-side diff:
 * `diffview-message` : View the current email message (which presumably
    contains a patch) side-by-side
 
+### Keybindings
+
+
+* `}` : Next file
+* `{` : Previous file
+* `l` : Align windows
+* `q` : Quit
 
 ### Screenshots
 

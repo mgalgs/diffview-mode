@@ -40,6 +40,12 @@
 ;; o `diffview-message' : View the current email message (which presumably
 ;;    contains a patch) side-by-side
 ;;
+;;; Keybindings
+;;
+;; o `}' : Next file
+;; o `{' : Previous file
+;; o `l' : Align windows
+;; o `q' : Quit
 ;;
 ;;; Screenshots:
 ;;
