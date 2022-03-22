@@ -1,3 +1,4 @@
+<a href="https://github.com/mgalgs/diffview-mode"><img src="https://www.gnu.org/software/emacs/images/emacs.png" alt="Emacs Logo" width="80" height="80" align="right"></a>
 ## diffview.el
 *View diffs in side-by-side format*
 
