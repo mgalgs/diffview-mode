@@ -43,8 +43,9 @@ Before:
 After:
 <img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-after.png">
 
-### Function Documentation
 
+
+### Function and Macro Documentation
 
 #### `(diffview-current)`
 
@@ -57,7 +58,6 @@ Show current diff region in a side-by-side view.
 #### `(diffview-message)`
 
 Show `message-mode` buffer in a side-by-side view.
-
 This is useful for reading patches from mailing lists.
 
 -----
